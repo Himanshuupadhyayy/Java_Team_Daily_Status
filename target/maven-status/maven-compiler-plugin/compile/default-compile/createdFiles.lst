@@ -1,0 +1,7 @@
+com\dev2prod\springdatajpamappings\entity\Address.class
+com\dev2prod\springdatajpamappings\entity\Employee.class
+com\dev2prod\springdatajpamappings\controller\AddressController.class
+com\dev2prod\springdatajpamappings\SpringDataJpaMappingsApplication.class
+com\dev2prod\springdatajpamappings\repository\EmployeeRepository.class
+com\dev2prod\springdatajpamappings\repository\AddressRepository.class
+com\dev2prod\springdatajpamappings\controller\EmployeeController.class
