@@ -1,7 +1,6 @@
-E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\dev2prod\springdatajpamappings\repository\AddressRepository.java
-E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\dev2prod\springdatajpamappings\controller\AddressController.java
-E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\dev2prod\springdatajpamappings\entity\Employee.java
-E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\dev2prod\springdatajpamappings\repository\EmployeeRepository.java
-E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\dev2prod\springdatajpamappings\entity\Address.java
-E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\dev2prod\springdatajpamappings\controller\EmployeeController.java
-E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\dev2prod\springdatajpamappings\SpringDataJpaMappingsApplication.java
+E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\jpa\repository\EmployeeRepository.java
+E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\jpa\service\EmployeeService.java
+E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\jpa\controller\EmployeeController.java
+E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\jpa\SpringDataJpaMappingsApplication.java
+E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\jpa\entity\Employee.java
+E:\SpringBoot(Java)\spring-data-jpa-mappings-master\src\main\java\com\jpa\entity\Address.java
