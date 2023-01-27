@@ -3,37 +3,37 @@ package com.OrganizationManagment.OrgManage.Entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.nio.MappedByteBuffer;
 
 @Entity
 public class Employees {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "EmpId")
     private int id;
 
     private String empName;
 
-    private String empRoll;
+    private String empRole;
 
 
-    @ManyToOne
-    private Department department;
+   @ManyToOne
+   private Department department;
 
     public Department getDepartment() {
-        return department;
-    }
+     return department;
+   }
 
-    public void setDepartment(Department department) {
-        this.department = department;
-    }
+   public void setDepartment(Department department) {
+    this.department = department;
+  }
 
     @Override
     public String toString() {
         return "Employees{" +
                 "id=" + id +
                 ", empName='" + empName + '\'' +
-                ", empRoll='" + empRoll + '\'' +
+                ", empRole='" + empRole + '\'' +
                 '}';
     }
 
@@ -53,18 +53,18 @@ public class Employees {
         this.empName = empName;
     }
 
-    public String getEmpRoll() {
-        return empRoll;
+    public String getEmpRole() {
+        return empRole;
     }
 
     public void setEmpRoll(String empRoll) {
-        this.empRoll = empRoll;
+        this.empRole = empRole;
     }
 
-    public Employees(int id, String empName, String empRoll) {
+    public Employees(int id, String empName, String empRole) {
         this.id = id;
         this.empName = empName;
-        this.empRoll = empRoll;
+        this.empRole = empRole;
     }
 
     public Employees(){
