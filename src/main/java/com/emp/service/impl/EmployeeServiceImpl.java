@@ -1,11 +1,8 @@
 package com.emp.service.impl;
 
 import com.emp.entity.Employee;
-import com.emp.entity.Organization;
-import com.emp.exception.ResourceNotFoundException;
 import com.emp.repository.EmployeeRepository;
-import com.emp.repository.OrganizationRepository;
-
+import com.emp.exception.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,8 +19,8 @@ import java.util.List;
 public class EmployeeServiceImpl {
 	@Autowired
 	private EmployeeRepository employeeRepository;
-	@Autowired
-	private OrganizationRepository organizationRepository;
+//	@Autowired
+//	private OrganizationRepository organizationRepository;
 
 	
 	
@@ -32,13 +29,13 @@ public class EmployeeServiceImpl {
 	}
 
 	public Employee addEmployee(Employee emp) {
-		Employee employee = this.employeeRepository.findByEmailOrNumber(emp.getEmail(), emp.getNumber());
-		if (employee != null) {
+//		Employee employee = this.employeeRepository.findByEmailOrNumber(emp.getEmail(), emp.getNumber());
+		if (emp != null) {
 			System.out.println("user is already exist in the db");
 		} else {
-			employee = this.employeeRepository.save(emp);
+			emp = this.employeeRepository.save(emp);
 		}
-		return employee;
+		return emp;
 	}
 
 	public List<Employee> getAllEmployees() {
@@ -46,23 +43,23 @@ public class EmployeeServiceImpl {
 		return employeeList;
 	}
 
-	public Employee getEmployee(Long id) {
+	public Employee getEmployee(int id) {
 		Employee employee = this.employeeRepository.findById(id)
 				.orElseThrow(() -> new ResourceNotFoundException("user with this user id is not exsit"));
 		return employee;
 	}
 
-	public void deleteEmployee(Long id) {
+	public void deleteEmployee(int id) {
 		this.employeeRepository.deleteById(id);
 	}
 
-	public Employee updateEmployee(Long id, Employee employee) {
-		employee.setId(id);
+	public Employee updateEmployee(Employee employee) {
+		employee.setId(employee.getId());
 		return this.employeeRepository.save(employee);
 	}
 
-	public Organization addOrg(Organization organization) {
-		return this.organizationRepository.save(organization);
-	}
+//	public Organization addOrg(Organization organization) {
+//		return this.organizationRepository.save(organization);
+//	}
 
 }
