@@ -28,7 +28,7 @@ public class OrganizationService {
         repoOr.delete(organization);
     }
 
-    public Organization updateOrg(Organization organization) {
+    public Organization updateOrg(int id ,Organization organization) {
 
         return this.repoOr.save(organization);
     }
