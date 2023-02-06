@@ -5,7 +5,7 @@ package com.college.controller;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.college.entity.College;
+import com.college.entity.User;
 
 /*
 *	author:  	Himanshu Upadhyay
@@ -13,6 +13,6 @@ import com.college.entity.College;
 *	file Name:  TestH2Repository.java
 *	Time :   	1:55:32 PM
 */
-public interface TestH2Repository extends JpaRepository<College, Integer>{
+public interface TestH2Repository extends JpaRepository<User, Integer>{
 
 }
